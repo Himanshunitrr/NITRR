@@ -1,0 +1,30 @@
+.threads-container{
+  /* overflow-y: scroll; */
+  /* min-width: 250px; */
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.threads-container h2{
+  /* padding: 5px 10px; */
+  margin: 4px 5px;
+}
+.threads-container h2:hover{
+  
+}
+.thread-link:active{
+  border: 1.6px solid var(--clr-hack);
+}
+.thread-link{
+  width: 100%;
+  text-decoration: none;
+  color: var(--clr-hack);
+  box-shadow: var(--box-shadow);
+}
+.thread-link:hover{
+  transform: scale(0.85);
+}
