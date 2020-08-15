@@ -1,0 +1,22 @@
+.post-container{
+  box-shadow: var(--box-shadow);
+  color: var(--clr-hack);
+  background: var(--clr-light);
+  margin: 0 10px;
+  margin-bottom: 18px;
+  /* position: relative; */
+}
+.post-container h2{
+  margin: 4px 6px;
+}
+.post-container p{
+  margin: 10px 8px;
+  padding: 8px 5px;
+}
+.post-features{
+  display: flex;
+  float: right;
+}
+.post-features .fa{
+  padding: 5px;
+}

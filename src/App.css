@@ -7,6 +7,20 @@
 
 body {
   background: var(--clr-background);
+  scrollbar-width: auto;
+  scrollbar-color: var(--clr-hack) var(--clr-light);
+}
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--clr-light);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-hack);
+  border-radius: 6px;
+  border: 3px solid var(--clr-light);
 }
 .App {
 }
@@ -15,7 +29,7 @@ body {
   margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 6fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   grid-gap: 10px;
 }
 .threads-container {
@@ -23,7 +37,7 @@ body {
   left: 10vw */
   position: sticky;
   position: -webkit-sticky;
-  top: 60px;
+  top: 58px;
   grid-column: 2/3;
   grid-row: 1/2;
   box-shadow: var(--box-shadow);
@@ -31,16 +45,77 @@ body {
 .colleges-container {
   position: sticky;
   position: -webkit-sticky;
-  top: 60px;
+  top: 58px;
   grid-column: 1/2;
   grid-row: 1/2;
   box-shadow: var(--box-shadow);
 }
-.students-container{
+.students-container {
   position: sticky;
   position: -webkit-sticky;
-  top: 60px;
+  top: 58px;
   grid-column: 4/5;
   grid-row: 1/2;
   box-shadow: var(--box-shadow);
+}
+.posts-container {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  box-shadow: var(--box-shadow);
+}
+.footer {
+  display: none !important;
+}
+@media (max-width: 500px) {
+  .colleges-container {
+    display: none !important;
+  }
+  .threads-container {
+    display: none !important;
+
+  }
+  .students-container {
+    display: none !important;
+
+  }
+
+  .page {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-gap: 6px;
+  }
+  .posts-container {
+    grid-column: 1/2;
+  }
+  .footer {
+    display: flex !important;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .nav-clicked.threads-container {
+    display: flex !important;
+    position: fixed;
+    top: 60px;
+    bottom: 52px;
+    right: 60%;
+    left: 0;
+  }
+  .nav-clicked.colleges-container {
+    display: flex !important;
+    position: fixed;
+    top: 60px;
+    bottom: 52px;
+    right: 60%;
+    left: 0;
+  }
+  .nav-clicked.students-container {
+    display: flex !important;
+    position: fixed;
+    top: 60px;
+    bottom: 52px;
+    right: 60%;
+    left: 0;
+  }
 }

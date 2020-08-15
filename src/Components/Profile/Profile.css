@@ -1,0 +1,9 @@
+.profile{
+  text-align: center;
+  color: var(--clr-hack);
+}
+.profile img{
+  border-radius: 50%;
+  width: 300px;
+  height: 400px;
+}

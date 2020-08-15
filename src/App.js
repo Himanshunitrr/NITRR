@@ -5,6 +5,8 @@ import Threads from "./Components/Threads/Threads"
 import "./App.css"
 import Colleges from "./Components/Colleges/Colleges"
 import Students from "./Components/Students/Student"
+import Posts from "./Components/Posts/Posts"
+import MobFooter from './Components/MobFooter/MobFooter';
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
         <div className="page">
           <Threads />
           <Colleges />
-          <Students/>
-        </div>
+          <Students />
+          <Posts />
+          </div>
+        <MobFooter/>
       </Router>
     </div>
   );

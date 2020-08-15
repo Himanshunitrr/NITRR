@@ -1,20 +1,26 @@
-.colleges-container{
+.colleges-container {
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   color: white;
+  text-align: center;
 }
-.colleges-container h2{
+.colleges-container h2 {
   margin: 4px 5px;
 }
-.college-link{
+.college-link {
   width: 100%;
   text-decoration: none;
   color: var(--clr-hack);
   box-shadow: var(--box-shadow);
 }
-.college-link:hover{
+.college-link:hover {
   transform: scale(0.85);
+}
+@media (max-width: 500px) {
+  .colleges-container {
+    background: var(--clr-light);
+  }
 }

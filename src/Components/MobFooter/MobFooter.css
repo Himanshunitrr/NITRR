@@ -1,0 +1,12 @@
+.footer{
+  color: var(--clr-hack);
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  font-size: 28px;
+  background: var(--clr-light);
+  min-height: 52px;
+}
+.footer .fa{
+  padding: 5px;
+}
