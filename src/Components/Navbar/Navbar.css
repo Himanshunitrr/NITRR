@@ -34,6 +34,7 @@
   justify-content: center;
   align-items: center;
   transition: transform 300ms ease-in;
+  z-index: 10;
 }
 .left-sidebar{
   position: fixed;
@@ -48,6 +49,7 @@
   justify-content: center;
   align-items: center;
   transition: transform 300ms ease-in;
+  z-index: 10;
 }
 .active-sidebars{
   transform: translateY(0);

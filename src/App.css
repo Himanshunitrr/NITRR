@@ -36,3 +36,11 @@ body {
   grid-row: 1/2;
   box-shadow: var(--box-shadow);
 }
+.students-container{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 60px;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  box-shadow: var(--box-shadow);
+}
