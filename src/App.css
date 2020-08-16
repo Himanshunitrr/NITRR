@@ -77,6 +77,28 @@ body::-webkit-scrollbar-thumb {
   top: 5px;
   right: 45px;
   z-index: 12;
+  cursor: pointer;
+}
+.new-post-active .new-post{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+.new-post{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+.new-post form{
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 @media (max-width: 500px) {
   .colleges-container {
@@ -133,4 +155,8 @@ body::-webkit-scrollbar-thumb {
     right: 60%;
     left: 0;
   }
+  .new-post form{
+  margin: 30% 10%;
+  margin-bottom: 20%;
+}
 }

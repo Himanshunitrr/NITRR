@@ -69,4 +69,7 @@
     right: 0;
     bottom: 60%;
   }
+  .left-sidebar img{
+    width: 250px;
+  }
 }
