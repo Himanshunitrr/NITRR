@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom'  
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'  
 import Navbar from "./Components/Navbar/Navbar"
 import Threads from "./Components/Threads/Threads"
 import "./App.css"
@@ -7,6 +7,7 @@ import Colleges from "./Components/Colleges/Colleges"
 import Students from "./Components/Students/Student"
 import Posts from "./Components/Posts/Posts"
 import MobFooter from './Components/MobFooter/MobFooter';
+import SinglePost from "./Components/SinglePost/SinglePost"
 
 function App() {
   return (
@@ -17,8 +18,12 @@ function App() {
           <Threads />
           <Colleges />
           <Students />
-          <Posts />
-          </div>
+          <Switch>
+            <Route exact path="/" component={Posts} />
+            <Route exact path="/singlePost" component={SinglePost} />
+          </Switch>
+        </div>
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
         <MobFooter/>
       </Router>
     </div>

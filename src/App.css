@@ -63,8 +63,20 @@ body::-webkit-scrollbar-thumb {
   grid-row: 1/2;
   box-shadow: var(--box-shadow);
 }
+.single-post{
+  grid-column: 3/4;
+  box-shadow: var(--box-shadow);
+}
 .footer {
   display: none !important;
+}
+.fa-plus-circle{
+  color: var(--clr-hack);
+  font-size: 32px;
+  position: fixed;
+  top: 5px;
+  right: 45px;
+  z-index: 12;
 }
 @media (max-width: 500px) {
   .colleges-container {
@@ -85,6 +97,9 @@ body::-webkit-scrollbar-thumb {
     grid-gap: 6px;
   }
   .posts-container {
+    grid-column: 1/2;
+  }
+  .single-post{
     grid-column: 1/2;
   }
   .footer {

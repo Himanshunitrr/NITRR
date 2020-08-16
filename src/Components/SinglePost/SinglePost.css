@@ -1,0 +1,13 @@
+.single-post{
+  color: var(--clr-hack);
+}
+hr{
+  height: 3px;
+  background: var(--clr-hack);
+}
+.single-post h2{
+  margin: 4px 8px;
+}
+.single-post p{
+  margin: 10px 8px;
+}

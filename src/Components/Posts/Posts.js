@@ -7,7 +7,7 @@ export default class Posts extends Component {
   render() {
     return (
       <div className="posts-container">
-        <Link to="/" className="post-link">
+        <Link to="/singlePost" className="post-link">
           <Post/>
         </Link>
         <Link to="/" className="post-link">
