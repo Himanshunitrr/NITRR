@@ -1,0 +1,25 @@
+.new-college-form{
+  background: var(--clr-light);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.new-college input[type="text"], .new-thread input[type="text"]{
+  background: var(--clr-hack);
+  margin: 8px 20px;
+}
+.new-college button, .new-thread button{
+  background: var(--clr-background);
+  color: var(--clr-hack);
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+  font-size: 24px;
+  width: 100px;
+  margin: 8px auto;
+  transition: transform 100ms ease-in;
+}
+.new-college button:active, .new-thread button:active{
+  transform: scale(0.8);
+}

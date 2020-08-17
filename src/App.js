@@ -29,7 +29,7 @@ class App extends React.Component {
             </Switch>
           </div>
           <NewPost />
-          <i onClick={this.handleNewPost} class="fa fa-plus-circle" aria-hidden="true"></i>
+          <i onClick={this.handleNewPost} class="fa fa-plus-circle create-new-post" aria-hidden="true"></i>
           <MobFooter />
         </Router>
       </div>

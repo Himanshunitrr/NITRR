@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb {
 .footer {
   display: none !important;
 }
-.fa-plus-circle{
+.fa-plus-circle.create-new-post{
   color: var(--clr-hack);
   font-size: 32px;
   position: fixed;
@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 .new-post-active .new-post{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -88,7 +88,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(0,0,0,0.4);
 }
 .new-post{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -136,7 +136,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     top: 60px;
     bottom: 52px;
-    right: 60%;
+    right: 40%;
     left: 0;
   }
   .nav-clicked.colleges-container {
@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     top: 60px;
     bottom: 52px;
-    right: 60%;
+    right: 40%;
     left: 0;
   }
   .nav-clicked.students-container {
@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     top: 60px;
     bottom: 52px;
-    right: 60%;
+    right: 40%;
     left: 0;
   }
   .new-post form{
