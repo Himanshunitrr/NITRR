@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import "./NewPost.css"
-export default class NewPost extends Component {
+import {newPost} from "../../store/actions/newPostAction"
+import {connect} from "react-redux"
+class NewPost extends Component {
   render() {
     return (
       <div className="new-post">
@@ -15,3 +17,10 @@ export default class NewPost extends Component {
     )
   }
 }
+const mapDispatchToProps = (dispatch) => {
+  return {
+    newPost: (post) => dispatch(newPost(post))
+  }
+}
+
+export default connect(null, mapDispatchToProps)(NewPost);

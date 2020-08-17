@@ -25,7 +25,7 @@ class App extends React.Component {
             <Students />
             <Switch>
               <Route exact path="/" component={Posts} />
-              <Route exact path="/singlePost" component={SinglePost} />
+              <Route exact path="/singlePost/:id" component={SinglePost} />
             </Switch>
           </div>
           <NewPost />
