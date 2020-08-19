@@ -25,7 +25,7 @@ export default class Threads extends Component {
         <Link to="/" className="thread-link">
           <h2 onClick={this.handleClick}>#Coding</h2>
         </Link>
-        <i onClick={this.handleNewThread} class="fa fa-plus-circle create-new-thread" aria-hidden="true"></i>
+        <i onClick={this.handleNewThread} className="fa fa-plus-circle create-new-thread" aria-hidden="true"></i>
         <div className="new-thread">
           <NewColOrThread />
         </div>

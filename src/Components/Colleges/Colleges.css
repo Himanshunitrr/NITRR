@@ -23,6 +23,7 @@
   position: relative;
   font-size: 32px;
   color: var(--clr-hack);
+  cursor: pointer;
 }
 .new-college {
   transform: translateX(-100%);
