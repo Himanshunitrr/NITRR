@@ -21,7 +21,7 @@ const initReducer = {
           { id: 1, title: "HImanshu" },
           { id: 1, title: "HImanshu" }
         ],
-        coding: [
+        hacking: [
           { id: 1, title: "HImanshu" },
           { id: 1, title: "HImanshu" },
           { id: 1, title: "HImanshu" }
@@ -32,6 +32,10 @@ const initReducer = {
 };
 
 const collegeReducer = (state = initReducer, action) => {
+  switch (action.type) {
+    case 'CREATE_POST':
+      console.log(action.post)
+  }
   return state;
 };
 
