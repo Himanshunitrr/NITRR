@@ -9,7 +9,9 @@ import Posts from "./Components/Posts/Posts"
 import MobFooter from './Components/MobFooter/MobFooter';
 import SinglePost from "./Components/SinglePost/SinglePost"
 import NewPost from './Components/NewPost/NewPost';
+import io from "socket.io-client"
 
+const socket = io.connect("http://localhost:4000")
 class App extends React.Component {
   handleNewPost = (e) => {
     document.body.classList.toggle("new-post-active")
